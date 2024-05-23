@@ -14,17 +14,17 @@
 
 <body>
     <div class="upper">
-        <div class="pre-header flex justify-center gap-x-10 mt-3">
+        <div class="pre-header flex justify-center gap-x-10 mt-3 mx-4 lg:mx-0">
             <div class="pre-header-img">
                 <img src="./assets/img/unec-logo.png" alt="unec logo">
             </div>
-            <div class="pre-header-text my-8">
-                <h1 class="text-3xl">Azərbaycan Dövlət İqtisad Universiteti</h1>
-                <h2 class="text-center text-xl">Məzun İnformasiya Sistemi </h2>
+            <div class="pre-header-text my-1.5 lg:my-8">
+                <h1 class="text-lg w-2/3 lg:w-max lg:text-3xl leading-6">Azərbaycan Dövlət İqtisad Universiteti</h1>
+                <h2 class="lg:text-center text-md lg:text-xl pt-2 ">Məzun İnformasiya Sistemi </h2>
             </div>
 
         </div>
-        <header class="flex items-center justify-between px-20">
+        <header class="flex items-center justify-between px-20 hidden lg:flex">
             <div class="header-left flex gap-16">
                 <p>UNEC MİS</p>
                 <div class="header-left-icons mt-1">
@@ -35,9 +35,9 @@
                 <img src="./assets/icon/header-contact.png" alt="">
             </div>
         </header>
-        <nav class="flex px-20 justify-between">
+        <nav class="flex px-6 lg:px-20 justify-between">
             <div class="nav-left flex gap-10">
-                <ul class="flex gap-20" aria-label="Main navigation">
+                <ul class="flex gap-20 hidden lg:flex" aria-label="Main navigation">
                     <li><a href="index.html">Ana səhifə</a></li>
                     <li><a href="group.html">UNEC Qrup</a></li>
                     <li><a href="announcement.html">Elanlar</a></li>
@@ -45,12 +45,19 @@
                     <li><a href="contact.html">Əlaqə</a></li>
                     <li><a href="mentors.html">Mentorlar</a></li>
                 </ul>
+                <div class="hamburger-menu lg:hidden">
+                    <img class="w-6 h-8" src="./assets/icon/hamburger-menu.svg" alt="">
+                </div>
                 <div class="nav-search">
                     <img src="./assets/icon/search.png" alt="Search">
                 </div>
             </div>
             <div>
-                <button class="login-button">Giriş</button>
+                <button class="login-button"><a href="login-student.html">Giriş</a></button>
+                <!-- <div class="user-profile-details flex gap-3">
+                    <a href=""><img class="w-6 " src="./assets/icon/profile.svg" alt=""></a>
+                    <a href=""><img class="w-6 " src="./assets/icon/logout.svg" alt=""></a>
+                </div> -->
             </div>
         </nav>
     </div>
@@ -85,25 +92,26 @@
 
         <div class="student-master-area">
             <h1 class="graduate text-center pb-10">“UNEC Məzunlar ofisi səhifəsinə xoş gəldiniz”</h1>
-            <div class="student-master-card flex">
+            <div class="student-master-card flex flex-col lg:flex-row">
                 <div class="general-card">
                     <img src="./assets/img/sign-graduates.png" alt="">
                     <div class="student-card-show text-white my-36 mx-5">
-                        <h1 class="text-5xl w-3/4">MƏZUN TƏLƏBƏYƏM</h1>
-                        <p class="w-7/12 text-2xl py-6">Qeydiyyatdan keçərək iş elanlarına müraciət edə bilərsiniz.</p>
-                        <button class="bg-transparent border border-white h-12 w-36 rounded-lg">
-                            <a href="">Qeydiyyat</a>
+                        <h1 class="text-3xl lg:text-5xl w-3/4">MƏZUN TƏLƏBƏYƏM</h1>
+                        <p class="w-7/12 text-xl lg:text-2xl py-2 lg:py-6">Qeydiyyatdan keçərək iş elanlarına müraciət edə bilərsiniz.</p>
+                        <button class="bg-transparent border border-white h-10 w-28 text-md lg:h-12 lg:w-36 lg:text-lg rounded-lg">
+                            <a href="register-student.html">Qeydiyyat</a>
                         </button>
+
 
                     </div>
                 </div>
                 <div class="general-card">
                     <img src="./assets/img/sign-ceo.png" alt="">
                     <div class="master-card-show text-white my-36 mx-5">
-                        <h1 class="text-5xl w-3/4">SAHİBKARAM</h1>
-                        <p class="w-7/12 text-2xl py-6">Firmanızı qeyd edərək iş elanları yarada bilərsiniz.</p>
-                        <button class="bg-transparent border border-white h-12 w-36 rounded-lg">
-                            <a href="">Qeydiyyat</a>
+                        <h1 class="text-3xl lg:text-5xl w-3/4">SAHİBKARAM</h1>
+                        <p class="w-7/12 text-xl lg:text-2xl py-2 lg:py-6">Firmanızı qeyd edərək iş elanları yarada bilərsiniz.</p>
+                        <button class="bg-transparent border border-white h-10 w-28 text-md lg:h-12 lg:w-36 lg:text-lg rounded-lg">
+                            <a href="register-owner.html">Qeydiyyat</a>
                         </button>
 
                     </div>
@@ -112,15 +120,15 @@
         </div>
 
 
-        <div class="news-area mt-20">
+        <div class="news-area mt-5 lg:mt-20 px-2">
             <h1 class="text-center py-10 text-[color:var(--main-color)] text-3xl">Xəbərlər</h1>
-            <div class="blue-dots">
+            <div class="blue-dots hidden lg:block">
                 <img id="blue-dot-1" src="./assets/pattern/blue-dot-lg.png" alt="">
                 <img id="blue-dot-2" src="./assets/pattern/blue-dot-sm 3.png" alt="">
                 <img id="blue-dot-3" src="./assets/pattern/blue-dot-lg.png" alt="">
                 <img id="blue-dot-4" src="./assets/pattern/blue-dot-sm 3.png" alt="">
             </div>
-            <div class="news-container flex justify-center gap-20">
+            <div class="news-container flex flex-col lg:flex-row justify-center gap-7 lg:gap-20">
                 <div class="news-card bg-white pb-5">
                     <img src="./assets/img/news-1.png" class="card-img-top rounded-0" alt="news one">
                     <span class="news-date text-center">15.03.2024</span>
@@ -337,7 +345,7 @@
             </section>
         </div>
 
-        <div class="question-area mx-auto text-center flex flex-col p-10 gap-6">
+        <div class="question-area mx-auto text-center flex flex-col p-10 gap-6 mt-10 lg:mt-3">
             <div class="question-top">
                 <img class=" mx-auto" src="./assets/img/question-avatar.png" alt="">
             </div>
@@ -346,7 +354,7 @@
                 <p class="py-3">Sualına cavab tapmaqda çətinlik çəkirsən? Bizim komanda sənə köməyə hər zaman hazırdır.</p>
             </div>
             <div class="question-bottom">
-                <button class="bg-[color:var(--main-color)] text-white">Buraya toxun</button>
+                <button class="bg-[color:var(--main-color)] text-white"><a href="faq.html">Buraya toxun</a></button>
             </div>
         </div>
 
@@ -354,7 +362,7 @@
     </main>
 
     <footer>
-        <div class="footer-top flex  justify-center  gap-20 mt-20 mb-8">
+        <div class="footer-top flex flex-wrap justify-center  gap-20 mt-20 mb-8">
             <div class="footer-menu">
                 <p>Universitet</p>
                 <ul>

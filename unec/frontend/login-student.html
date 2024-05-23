@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/output.css">
-    <link rel="stylesheet" href="./assets/css/contact.css">
+    <link rel="stylesheet" href="./assets/css/register-student.css">
     <title>Document</title>
 </head>
 
@@ -49,50 +49,49 @@
             </div>
             <div>
                 <button class="login-button"><a href="login-student.html">Giriş</a></button>
-                <!-- <div class="user-profile-details flex gap-3">
-                    <a href=""><img class="w-6 " src="./assets/icon/profile.svg" alt=""></a>
-                    <a href=""><img class="w-6 " src="./assets/icon/logout.svg" alt=""></a>
-                </div> -->
             </div>
         </nav>
     </div>
 
     <main>
-        <div class="contact-container flex justify-between px-32 mb-5 py-6">
-            <div class="contact-left">
-                <div class="contact-card border-b-2 py-7">
-                    <p class="text-2xl text-white font-semibold">Bizimlə əlaqə nömrəsi</p>
-                    <p class="text-2xl text-white font-semibold">(012) 492 60 43</p>
+        <div class="login-container text-center px-10 pt-20 flex flex-col items-center">
+            <div class="choose-path flex gap-5 py-3 px-5">
+                <div class="student-path h-12 w-36 py-3 text-white">
+                    <a href="">Tələbə</a>
                 </div>
-                <div class="contact-card border-b-2 py-7">
-                    <p class="text-2xl text-white font-semibold">UNEC III korpus ünvanı </p>
-                    <p class="text-2xl text-white font-semibold">194 Murtuza Muxtarov</p>
-                </div>
-                <div class="contact-card py-7">
-                    <h2 class="text-2xl text-white font-semibold">Bizə yazın</h2>
-                    <div class="contact-item flex flex-col my-5">
-                        <label class="text-white text-2xl opacity-80" for="">Email</label>
-                        <input class="w-96 h-12 rounded-xl px-5 my-2" type="text" required placeholder="example@gmail.com">
+            </div>
+            <form class="info-enter py-10">
+                <div class="info-inputs flex flex-col gap-5">
+                    <div class="input-item flex relative">
+                        <input type="email" placeholder="Email">
+                        <img class="absolute right-2 w-6 h-10" src="./assets/icon/mail-input.svg" alt="">
                     </div>
-                    <textarea class="mt-2 w-96 h-24 rounded-xl resize-none px-5 text-xl py-5" placeholder="Mesajınız" name="" id="" cols="30" rows="3"></textarea>
+                    <div class="input-item flex relative">
+                        <input type="password" placeholder="Şifrə" required>
+                        <img class="absolute right-2 w-4 h-10" src="./assets/icon/password-input.svg" alt="">
+                    </div>
+
+
+
+
                 </div>
-            </div>
-            <div class="contact-right my-6">
-                <img src="./assets/img/contact-location.png" alt="">
-            </div>
+                <div class="forgot-pwd text-sm my-3 flex justify-end">
+                    <a class="text-[color:var(--main-color)] font-medium" href="">Forgot password?</a>
+                </div>
+                <button class="">Qeydiyyat</button>
+                <p class="pt-5">Hesabınız yoxdur? <a href="register-student.html" class="font-semibold">Qeydiyyatdan keçin</a></p>
+            </form>
         </div>
     </main>
 
 
-
-
     <footer>
-        <div class="footer-bottom text-center pt-5 pb-10">
+        <div class="footer-bottom text-center pt-5 pb-10 ">
             <p> <span>&copy</span> 2024 UNEC. Bütün hüquqlar qorunur.</p>
         </div>
     </footer>
 
-    <script src="./assets/script/main.js"></script>
+    <script src="./assets/script/main.js "></script>
 </body>
 
 </html>

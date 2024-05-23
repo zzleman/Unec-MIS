@@ -11,6 +11,7 @@
 :root {
     --page-color: #F7F5ED;
     --main-color: #114C8C;
+    --gradient-color: linear-gradient(#9747FF, #1677E0);
 }
 
 body {
@@ -369,3 +370,31 @@ nav ul li a.active::after {
 
 
 /* Footer Ends */
+
+@media screen and (max-width:767px) {
+    .slider-indicators {
+        top: 270px;
+    }
+    .student-master-area {
+        margin-top: -520px;
+    }
+    .student-card-show {
+        top: -130px;
+    }
+    .master-card-show {
+        top: 230px;
+        left: 0;
+    }
+    .student-card-show p {
+        width: 270px;
+    }
+    .news-card {
+        width: 100%;
+    }
+    .footer-menu p {
+        font-size: 18px;
+    }
+    .footer-menu li {
+        font-size: 12px;
+    }
+}

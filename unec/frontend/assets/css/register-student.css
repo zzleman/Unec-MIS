@@ -1,0 +1,32 @@
+.choose-path {
+    border: 1px solid;
+    border-image: -webkit-linear-gradient(#9747FF, #1677E0) 1;
+}
+
+.student-path {
+    background: -webkit-linear-gradient(#9747FF, #1677E0);
+}
+
+.owner-path {
+    border: 1px solid;
+    border-image: -webkit-linear-gradient(#9747FF, #1677E0) 1;
+}
+
+.info-inputs input {
+    width: 350px;
+    height: 40px;
+    padding: 0 20px;
+    border: 1px solid;
+    border-image: -webkit-linear-gradient(#9747FF, #1677E0) 1;
+}
+
+.acceptance {
+    margin-left: -65px;
+}
+
+.login-container button {
+    background-image: -webkit-linear-gradient(#9747FF, #1677E0);
+    width: 350px;
+    height: 45px;
+    color: white;
+}

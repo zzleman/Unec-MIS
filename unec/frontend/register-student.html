@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/output.css">
+    <link rel="stylesheet" href="./assets/css/register-student.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="upper">
+        <div class="pre-header flex justify-center gap-x-10 mt-3">
+            <div class="pre-header-img">
+                <img src="./assets/img/unec-logo.png" alt="unec logo">
+            </div>
+            <div class="pre-header-text my-8">
+                <h1 class="text-3xl">Azərbaycan Dövlət İqtisad Universiteti</h1>
+                <h2 class="text-center text-xl">Məzun İnformasiya Sistemi </h2>
+            </div>
+
+        </div>
+        <header class="flex items-center justify-between px-20">
+            <div class="header-left flex gap-16">
+                <p>UNEC MİS</p>
+                <div class="header-left-icons mt-1">
+                    <img src="./assets/icon/header-social.png" alt="">
+                </div>
+            </div>
+            <div class="header-right">
+                <img src="./assets/icon/header-contact.png" alt="">
+            </div>
+        </header>
+        <nav class="flex px-20 justify-between">
+            <div class="nav-left flex gap-10">
+                <ul class="flex gap-20" aria-label="Main navigation">
+                    <li><a href="index.html">Ana səhifə</a></li>
+                    <li><a href="group.html">UNEC Qrup</a></li>
+                    <li><a href="announcement.html">Elanlar</a></li>
+                    <li><a href="events.html">Tədbirlər</a></li>
+                    <li><a href="contact.html">Əlaqə</a></li>
+                    <li><a href="mentors.html">Mentorlar</a></li>
+                </ul>
+                <div class="nav-search">
+                    <img src="./assets/icon/search.png" alt="Search">
+                </div>
+            </div>
+            <div>
+                <button class="login-button"><a href="login-student.html">Giriş</a></button>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <div class="login-container text-center px-10 pt-20 flex flex-col items-center">
+            <div class="choose-path flex gap-5 py-3 px-5">
+                <div class="student-path h-12 w-36 py-3 text-white">
+                    <a href="register-student.html">Tələbə</a>
+                </div>
+                <div class="owner-path h-12 w-36 py-3">
+                    <a href="register-owner.html">Sahibkar</a>
+                </div>
+            </div>
+            <form class="info-enter py-10">
+                <div class="info-inputs flex flex-col gap-8">
+                    <div class="input-item flex relative">
+                        <input type="text" placeholder="Ad">
+                        <img class="absolute right-2 w-6 h-10" src="./assets/icon/name-input-icon.svg" alt="">
+                    </div>
+                    <div class="input-item flex relative">
+                        <input type="text" placeholder="Soyad">
+                        <img class="absolute right-2 w-6 h-10" src="./assets/icon/name-input-icon.svg" alt="">
+                    </div>
+                    <div class="input-item flex relative">
+                        <input type="email" placeholder="Universitet maili">
+                        <img class="absolute right-2 w-6 h-10" src="./assets/icon/mail-input.svg" alt="">
+                    </div>
+                    <div class="input-item flex relative">
+                        <input type="text" placeholder="Linkedin hesabı">
+                        <img class="absolute right-2 w-6 h-10" src="./assets/icon/linkedin-input.svg" alt="">
+                    </div>
+                    <div class="input-item flex relative">
+                        <input type="password" placeholder="Şifrə" required>
+                        <img class="absolute right-2 w-4 h-10" src="./assets/icon/password-input.svg" alt="">
+                    </div>
+                    <div class="input-item flex relative">
+                        <input type="password" placeholder="Təkrar şifrə">
+                        <img class="absolute right-2 w-4 h-10" src="./assets/icon/password-input.svg" alt="">
+                    </div>
+
+
+
+
+                </div>
+                <div class="acceptance text-sm my-6">
+                    <input type="checkbox" name="" id="" required>
+                    <label for=""><a href="" class="font-semibold">İstifadəçi Qaydalarını</a> oxudum və razıyam</label>
+                </div>
+                <button class="">Qeydiyyat</button>
+                <p class="pt-5">Hesabınız var? <a href="login-student.html" class="font-semibold">Giriş edin</a></p>
+            </form>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer-bottom text-center pt-5 pb-10 ">
+            <p> <span>&copy</span> 2024 UNEC. Bütün hüquqlar qorunur.</p>
+        </div>
+    </footer>
+
+    <script src="./assets/script/main.js "></script>
+</body>
+
+</html>
