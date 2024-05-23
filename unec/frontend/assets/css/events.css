@@ -99,28 +99,6 @@ nav ul li a.active::after {
 /* Nav Ends */
 
 
-/* Main Area Starts */
-
-main {
-    background-image: url(/unec/frontend/assets/img/group-bg.png);
-    height: 600px;
-    background-size: cover;
-    background-position: 0 600px;
-}
-
-.information {
-    background-color: #6868688e;
-    height: 450px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 310px;
-}
-
-
-/* Main Area Ends */
-
-
 /* Footer Starts */
 
 .footer-menu a {

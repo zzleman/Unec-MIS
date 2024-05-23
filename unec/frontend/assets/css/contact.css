@@ -99,48 +99,24 @@ nav ul li a.active::after {
 /* Nav Ends */
 
 
-/* Main Area Starts */
+/* Contact Container Starts */
 
-main {
-    background-image: url(/unec/frontend/assets/img/group-bg.png);
-    height: 600px;
+.contact-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/unec/frontend/assets/img/contact-bg.png);
+    height: 630px;
     background-size: cover;
-    background-position: 0 600px;
+    background-position: 0 630px;
 }
 
-.information {
-    background-color: #6868688e;
-    height: 450px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 310px;
+.contact-right img {
+    height: 520px;
 }
 
 
-/* Main Area Ends */
+/* Contact Container Ends */
 
 
 /* Footer Starts */
-
-.footer-menu a {
-    text-decoration: none;
-    color: #181515;
-}
-
-.footer-menu ul {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.footer-menu p {
-    color: var(--main-color);
-    font-size: 24px;
-    font-weight: 500;
-    padding-bottom: 10px;
-}
 
 .footer-bottom {
     color: #667085;
