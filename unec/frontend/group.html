@@ -12,17 +12,17 @@
 
 <body>
     <div class="upper">
-        <div class="pre-header flex justify-center gap-x-10 mt-3">
+        <div class="pre-header flex justify-center gap-x-10 mt-3 mx-4 lg:mx-0">
             <div class="pre-header-img">
                 <img src="./assets/img/unec-logo.png" alt="unec logo">
             </div>
-            <div class="pre-header-text my-8">
-                <h1 class="text-3xl">Azərbaycan Dövlət İqtisad Universiteti</h1>
-                <h2 class="text-center text-xl">Məzun İnformasiya Sistemi </h2>
+            <div class="pre-header-text my-1.5 lg:my-8">
+                <h1 class="text-lg w-2/3 lg:w-max lg:text-3xl leading-6">Azərbaycan Dövlət İqtisad Universiteti</h1>
+                <h2 class="lg:text-center text-md lg:text-xl pt-2 ">Məzun İnformasiya Sistemi </h2>
             </div>
 
         </div>
-        <header class="flex items-center justify-between px-20">
+        <header class="flex items-center justify-between px-20 hidden lg:flex">
             <div class="header-left flex gap-16">
                 <p>UNEC MİS</p>
                 <div class="header-left-icons mt-1">
@@ -33,9 +33,9 @@
                 <img src="./assets/icon/header-contact.png" alt="">
             </div>
         </header>
-        <nav class="flex px-20 justify-between">
+        <nav class="flex px-6 lg:px-20 justify-between text-nowrap">
             <div class="nav-left flex gap-10">
-                <ul class="flex gap-20" aria-label="Main navigation">
+                <ul class="flex lg:gap-7 xl:gap-20 hidden lg:flex" aria-label="Main navigation">
                     <li><a href="index.html">Ana səhifə</a></li>
                     <li><a href="group.html">UNEC Qrup</a></li>
                     <li><a href="announcement.html">Elanlar</a></li>
@@ -43,6 +43,9 @@
                     <li><a href="contact.html">Əlaqə</a></li>
                     <li><a href="mentors.html">Mentorlar</a></li>
                 </ul>
+                <div class="hamburger-menu lg:hidden">
+                    <img class="w-6 h-8" src="./assets/icon/hamburger-menu.svg" alt="">
+                </div>
                 <div class="nav-search">
                     <img src="./assets/icon/search.png" alt="Search">
                 </div>
@@ -57,21 +60,21 @@
         </nav>
     </div>
     <main class="w-full">
-        <div class="information w-9/12 mx-auto text-center py-8">
-            <p class="w-8/12 leading-10 mx-auto text-white text-xl">
+        <div class="information w-11/12 md:w-10/12 lg:w-9/12 mx-auto text-center py-8 px-2 lg:px-0">
+            <p class="w-12/12 md:w-9/12 lg:w-8/12 leading-7 md:leading-8 lg:leading-10 mx-auto text-white text-md md:text-lg lg:text-xl">
                 Hörmətli Məzunlar,<br> Aşağıdakı linkə klikləməklə LinkedIn platformasında MİS olaraq yaratdığımız hesabla əlaqəli "UNEC MİS" qrupuna üzvlük tələb edə bilərsiniz. https://www.linkedin.com/groups/13008176/ <br>  Bu qrupa daxil olan məzunlarımız
                 köhnə dostları və müəllimləri ilə əlaqə saxlaya, <br> müxtəlif layihələrlə UNEC-ə dəstək ola, iş elanlarını paylaşa və <br> karyera imkanlarından xəbərdar ola bilərlər.
             </p>
-            <h1 class="italic text-white text-3xl pt-8">
+            <h1 class="italic text-white font-semibold text-xl md:text-2xl lg:text-3xl pt-8">
                 UNEC Məzun İnformasiya Sistemi
             </h1>
         </div>
     </main>
     <footer>
-        <div class="footer-top flex  justify-center  gap-20 mt-20 mb-8">
+        <div class="footer-top flex flex-wrap justify-between xl:justify-center gap-24 mt-20 mb-8 mx-10 md:mx-40 lg:mx-28 text-nowrap">
             <div class="footer-menu">
                 <p>Universitet</p>
-                <ul>
+                <ul class="mx-auto">
                     <li><a href="">Haqqımızda</a></li>
                     <li><a href="">Karyera Mərkəzi</a></li>
                     <li><a href="">Xəbərlər</a></li>
@@ -107,7 +110,7 @@
                 </ul>
             </div>
         </div>
-        <div class="footer-bottom text-center pt-5 pb-10">
+        <div class="footer-bottom text-center pt-5 pb-10 text-xs lg:text-lg">
             <p> <span>&copy</span> 2024 UNEC. Bütün hüquqlar qorunur.</p>
         </div>
     </footer>

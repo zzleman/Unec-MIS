@@ -102,6 +102,10 @@ nav ul li a.active::after {
 
 /* Slider Starts */
 
+.unec-slider {
+    min-height: 800px;
+}
+
 .slider-indicators {
     top: 650px;
 }
@@ -371,7 +375,10 @@ nav ul li a.active::after {
 
 /* Footer Ends */
 
-@media screen and (max-width:767px) {
+
+/* @media screen and (max-width:) {} */
+
+@media screen and (max-width:640px) {
     .slider-indicators {
         top: 270px;
     }
