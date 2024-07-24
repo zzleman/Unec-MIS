@@ -74,7 +74,7 @@ nav {
     line-height: 30px;
 }
 
-nav button {
+#sign_button {
     background-image: linear-gradient(#9747FF, #1677E0);
     width: 100px;
     height: 35px;
@@ -103,7 +103,7 @@ nav ul li a.active::after {
 /* Slider Starts */
 
 .unec-slider {
-    min-height: 800px;
+    height: 800px;
 }
 
 .slider-indicators {
@@ -117,6 +117,12 @@ nav ul li a.active::after {
 
 .indicator[aria-current="true"] {
     background-color: var(--main-color);
+}
+
+.slider-img img {
+    height: 600px;
+    object-fit: cover;
+    object-position: 0 10px;
 }
 
 
@@ -193,10 +199,15 @@ nav ul li a.active::after {
     position: absolute;
     background-color: white;
     padding: 10px;
-    top: 185px;
-    left: 69px;
+    top: 215px;
+    left: 18%;
     width: 230px;
     border-radius: 10px;
+    height: 40px;
+}
+
+#news-image {
+    height: 250px;
 }
 
 .blue-dots {
@@ -215,7 +226,6 @@ nav ul li a.active::after {
     width: 170px;
     top: -10px;
     right: 420px;
-    z-index: 1;
 }
 
 #blue-dot-3 {
@@ -230,7 +240,6 @@ nav ul li a.active::after {
     width: 170px;
     top: 350px;
     left: 410px;
-    z-index: 1;
 }
 
 
@@ -378,18 +387,37 @@ nav ul li a.active::after {
 
 /* @media screen and (max-width:) {} */
 
-@media screen and (max-width:640px) {
+@media screen and (max-width:767px) {
+    .unec-slider {
+        height: 300px;
+    }
+    .slider-img img {
+        height: 270px;
+        object-fit: cover;
+        object-position: center;
+    }
     .slider-indicators {
         top: 270px;
     }
     .student-master-area {
-        margin-top: -520px;
+        margin-top: 50px;
+    }
+    .student-master-card {
+        min-height: 650px;
+    }
+    .general-card {
+        height: 285px;
+    }
+    .general-card img {
+        height: 285px;
+        width: 100%;
+        object-fit: cover;
     }
     .student-card-show {
         top: -130px;
     }
     .master-card-show {
-        top: 230px;
+        top: 190px;
         left: 0;
     }
     .student-card-show p {
@@ -398,10 +426,75 @@ nav ul li a.active::after {
     .news-card {
         width: 100%;
     }
+    #news-image {
+        width: 100%;
+    }
+    .news-date {
+        left: 23%;
+    }
     .footer-menu p {
         font-size: 18px;
     }
     .footer-menu li {
         font-size: 12px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .unec-slider {
+        height: 650px;
+    }
+    .slider-img img {
+        height: 650px;
+        object-fit: cover;
+        object-position: center 120px;
+    }
+    #slider_img_1 {
+        object-position: right 100px;
+    }
+    .slider-indicators {
+        top: 450px;
+    }
+    .student-master-area {
+        margin-top: -40px;
+    }
+    .master-card-show {
+        top: 400px;
+        left: 0;
+    }
+    .general-card img {
+        height: 400px;
+        width: 100vw;
+        object-fit: cover;
+    }
+    .news-card {
+        width: 65%;
+        margin: 0 auto;
+    }
+    .news-card img {
+        width: 100%;
+    }
+    .news-btn img {
+        left: 65px;
+    }
+    .news-container {
+        gap: 2.5rem;
+    }
+    .news-date {
+        padding: 10px;
+        top: 220px;
+        left: 28%;
+        width: 230px;
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (min-width:1024px) and (max-width:1279px) {
+    .master-card-show {
+        right: -100px;
+        top: -30px;
+    }
+    .student-card-show {
+        top: -30px;
     }
 }

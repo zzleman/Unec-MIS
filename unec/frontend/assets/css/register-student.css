@@ -24,9 +24,25 @@
     margin-left: -65px;
 }
 
-.login-container button {
+#sign_btn,
+#register_btn,
+#login_btn {
     background-image: -webkit-linear-gradient(#9747FF, #1677E0);
     width: 350px;
     height: 45px;
     color: white;
+}
+
+@media screen and (max-width:767px) {
+    .info-inputs input {
+        width: 100%;
+        margin: 0 auto;
+    }
+    #login_btn,
+    #register_btn {
+        width: 100%;
+    }
+    .acceptance {
+        margin-left: 0;
+    }
 }

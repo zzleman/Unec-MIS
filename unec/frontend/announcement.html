@@ -12,17 +12,17 @@
 
 <body>
     <div class="upper">
-        <div class="pre-header flex justify-center gap-x-10 mt-3">
+        <div class="pre-header flex justify-center gap-x-10 mt-3 mx-4 lg:mx-0">
             <div class="pre-header-img">
                 <img src="./assets/img/unec-logo.png" alt="unec logo">
             </div>
-            <div class="pre-header-text my-8">
-                <h1 class="text-3xl">Azərbaycan Dövlət İqtisad Universiteti</h1>
-                <h2 class="text-center text-xl">Məzun İnformasiya Sistemi </h2>
+            <div class="pre-header-text my-1.5 lg:my-8">
+                <h1 class="text-lg w-2/3 lg:w-max lg:text-3xl leading-6">Azərbaycan Dövlət İqtisad Universiteti</h1>
+                <h2 class="lg:text-center text-md lg:text-xl pt-2 ">Məzun İnformasiya Sistemi </h2>
             </div>
 
         </div>
-        <header class="flex items-center justify-between px-20">
+        <header class="flex items-center justify-between px-20 hidden xl:flex">
             <div class="header-left flex gap-16">
                 <p>UNEC MİS</p>
                 <div class="header-left-icons mt-1">
@@ -33,41 +33,44 @@
                 <img src="./assets/icon/header-contact.png" alt="">
             </div>
         </header>
-        <nav class="flex px-20 justify-between">
+        <nav class="flex px-6 lg:px-20 justify-between text-nowrap">
             <div class="nav-left flex gap-10">
-                <ul class="flex gap-20" aria-label="Main navigation">
+                <ul class="flex lg:gap-7 xl:gap-20 hidden lg:flex" aria-label="Main navigation">
                     <li><a href="index.html">Ana səhifə</a></li>
                     <li><a href="group.html">UNEC Qrup</a></li>
                     <li><a href="announcement.html">Elanlar</a></li>
                     <li><a href="events.html">Tədbirlər</a></li>
                     <li><a href="contact.html">Əlaqə</a></li>
-                    <li><a href="mentors.html">Mentorlar</a></li>
+                    <li><a href="mentor.html">Mentorlar</a></li>
                 </ul>
+                <div class="hamburger-menu lg:hidden">
+                    <img class="w-6 h-8" src="./assets/icon/hamburger-menu.svg" alt="">
+                </div>
                 <div class="nav-search">
                     <img src="./assets/icon/search.png" alt="Search">
                 </div>
             </div>
-            <div>
-                <button class="login-button"><a href="login-student.html">Giriş</a></button>
-                <!-- <div class="user-profile-details flex gap-3">
-                    <a href=""><img class="w-6 " src="./assets/icon/profile.svg" alt=""></a>
-                    <a href=""><img class="w-6 " src="./assets/icon/logout.svg" alt=""></a>
-                </div> -->
+            <div class="login-section">
+                <button id="sign_button"><a href="login-student.html">Giriş</a></button>
+                <div id="user-profile-details" class="user-profile-details flex gap-3 hidden">
+                    <a href="student.html"><img class="w-6" id="profile" src="./assets/icon/profile.svg" alt=""></a>
+                    <a href=""><img class="w-6" id="logout" src="./assets/icon/logout.svg" alt=""></a>
+                </div>
             </div>
         </nav>
     </div>
 
     <main>
-        <div class="main-bg relative">
-            <img class="w-full" src="./assets/img/announcements-bg.png" alt="">
-            <div class="main-absolute text-center">
-                <h1 class="text-8xl font-bold text-white">28 İYUN 2024</h1>
-                <h2 class="text-5xl font-bold text-white pt-3">UNEC Məzun Günü</h2>
+        <div class="main-bg">
+            <div class="main-absolute text-center py-40 flex flex-col gap-5">
+                <h1 class=" text-5xl lg:text-8xl font-bold text-white">28 İYUN 2024</h1>
+                <h2 class=" text-3xl lg:text-5xl font-bold text-white pt-3">UNEC Məzun Günü</h2>
             </div>
-            <p class="text-xl pt-6 pb-20 w-7/12 text-center mx-auto">Ənənəvi Məzun Günümüz 28 İyun 2024-cü il qeyd olunacaq. Bütün məzunlarımızı bu özəl gündə bizə qoşulmağa dəvət edirik. Məzun Günü ilə bağlı təfərrüatlar tezliklə bu səhifədə elan ediləcək.</p>
+            <p class="text-lg lg:text-xl pt-6 pb-20 w-7/12 text-center mx-auto">Ənənəvi Məzun Günümüz 28 İyun 2024-cü il qeyd olunacaq. Bütün məzunlarımızı bu özəl gündə bizə qoşulmağa dəvət edirik. Məzun Günü ilə bağlı təfərrüatlar tezliklə bu səhifədə elan ediləcək.
 
+            </p>
         </div>
-        <div class="main-grid grid grid-cols-2 mx-auto gap-10">
+        <div class="main-grid grid grid-cols-1 md:grid-cols-2 mx-auto gap-10">
             <div class="main-card px-7 py-5 rounded-lg">
                 <img class="rounded-10 w-96 mx-auto" src="./assets/img/main-grid.png" alt="">
                 <p class="w-10/12 py-3">
@@ -120,7 +123,7 @@
     </main>
 
     <footer>
-        <div class="footer-top flex  justify-center  gap-20 mt-20 mb-8">
+        <div class="footer-top flex flex-wrap justify-center  gap-20 mt-20 mb-8">
             <div class="footer-menu">
                 <p>Universitet</p>
                 <ul>
@@ -164,6 +167,7 @@
         </div>
     </footer>
 
+    <script src="./assets/script/login-register.js"></script>
     <script src="./assets/script/main.js"></script>
 </body>
 

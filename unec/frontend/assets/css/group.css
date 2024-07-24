@@ -103,9 +103,9 @@ nav ul li a.active::after {
 
 main {
     background-image: url(/unec/frontend/assets/img/group-bg.png);
-    height: 600px;
+    height: 650px;
     background-size: cover;
-    background-position: 0 600px;
+    background-position: 0 650px;
 }
 
 .information {
@@ -161,9 +161,15 @@ main {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width:767px) {
     .information {
         top: 270px;
+    }
+    .footer-menu p {
+        font-size: 18px;
+    }
+    .footer-menu li {
+        font-size: 12px;
     }
 }
 

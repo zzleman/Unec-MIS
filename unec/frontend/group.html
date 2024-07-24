@@ -22,7 +22,7 @@
             </div>
 
         </div>
-        <header class="flex items-center justify-between px-20 hidden lg:flex">
+        <header class="flex items-center justify-between px-20 hidden xl:flex">
             <div class="header-left flex gap-16">
                 <p>UNEC MİS</p>
                 <div class="header-left-icons mt-1">
@@ -41,7 +41,7 @@
                     <li><a href="announcement.html">Elanlar</a></li>
                     <li><a href="events.html">Tədbirlər</a></li>
                     <li><a href="contact.html">Əlaqə</a></li>
-                    <li><a href="mentors.html">Mentorlar</a></li>
+                    <li><a href="mentor.html">Mentorlar</a></li>
                 </ul>
                 <div class="hamburger-menu lg:hidden">
                     <img class="w-6 h-8" src="./assets/icon/hamburger-menu.svg" alt="">
@@ -50,12 +50,12 @@
                     <img src="./assets/icon/search.png" alt="Search">
                 </div>
             </div>
-            <div>
-                <button class="login-button"><a href="login-student.html">Giriş</a></button>
-                <!-- <div class="user-profile-details flex gap-3">
-                    <a href=""><img class="w-6 " src="./assets/icon/profile.svg" alt=""></a>
-                    <a href=""><img class="w-6 " src="./assets/icon/logout.svg" alt=""></a>
-                </div> -->
+            <div class="login-section">
+                <button id="sign_button"><a href="login-student.html">Giriş</a></button>
+                <div id="user-profile-details" class="user-profile-details flex gap-3 hidden">
+                    <a href="student.html"><img class="w-6" id="profile" src="./assets/icon/profile.svg" alt=""></a>
+                    <a href=""><img class="w-6" id="logout" src="./assets/icon/logout.svg" alt=""></a>
+                </div>
             </div>
         </nav>
     </div>
@@ -71,10 +71,10 @@
         </div>
     </main>
     <footer>
-        <div class="footer-top flex flex-wrap justify-between xl:justify-center gap-24 mt-20 mb-8 mx-10 md:mx-40 lg:mx-28 text-nowrap">
+        <div class="footer-top flex flex-wrap justify-center  gap-20 mt-20 mb-8">
             <div class="footer-menu">
                 <p>Universitet</p>
-                <ul class="mx-auto">
+                <ul>
                     <li><a href="">Haqqımızda</a></li>
                     <li><a href="">Karyera Mərkəzi</a></li>
                     <li><a href="">Xəbərlər</a></li>
@@ -110,11 +110,12 @@
                 </ul>
             </div>
         </div>
-        <div class="footer-bottom text-center pt-5 pb-10 text-xs lg:text-lg">
+        <div class="footer-bottom text-center pt-5 pb-10">
             <p> <span>&copy</span> 2024 UNEC. Bütün hüquqlar qorunur.</p>
         </div>
     </footer>
 
+    <script src="./assets/script/login-register.js"></script>
     <script src="./assets/script/main.js"></script>
 </body>
 

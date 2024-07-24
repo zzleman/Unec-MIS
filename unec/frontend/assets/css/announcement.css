@@ -110,15 +110,9 @@ nav ul li a.active::after {
     background-color: #b9c8ff74;
 }
 
-.main-bg img {
-    height: 700px;
-    object-fit: cover;
-}
-
 .main-absolute {
-    position: absolute;
-    top: 260px;
-    left: 380px;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/unec/frontend/assets/img/announcements-bg.png);
+    height: 700px;
 }
 
 .main-btn {
@@ -160,3 +154,23 @@ nav ul li a.active::after {
 
 
 /* Footer Ends */
+
+@media screen and (max-width:767px) {
+    .main-absolute {
+        height: 400px;
+        background-size: cover;
+    }
+    .main-card {
+        width: 344px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .main-absolute {
+        height: 600px;
+        background-size: cover;
+    }
+    .main-card {
+        width: 344px;
+    }
+}

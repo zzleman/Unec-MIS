@@ -8,10 +8,15 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 33.33px;
     background: #fff;
+    overflow: hidden;
 }
 
 .mentor-card h4 {
     color: #7C7C7C;
+}
+
+.mentor-text {
+    width: 75%;
 }
 
 .mentor-reviews img {
@@ -38,14 +43,16 @@
     width: 500px;
 }
 
-.mentor-text {
-    width: 47%;
-}
-
 .mentor-info button {
     background-image: -webkit-linear-gradient(#9747FF, #1677E0);
     width: 170px;
     height: 45px;
     color: white;
     border-radius: 10px;
+}
+
+@media only screen and (min-width:1024px) {
+    .mentor-text {
+        width: 47%;
+    }
 }

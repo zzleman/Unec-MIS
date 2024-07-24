@@ -41,18 +41,18 @@
                     <li><a href="announcement.html">Elanlar</a></li>
                     <li><a href="events.html">Tədbirlər</a></li>
                     <li><a href="contact.html">Əlaqə</a></li>
-                    <li><a href="mentors.html">Mentorlar</a></li>
+                    <li><a href="mentor.html">Mentorlar</a></li>
                 </ul>
                 <div class="nav-search">
                     <img src="./assets/icon/search.png" alt="Search">
                 </div>
             </div>
-            <div>
-                <button class="login-button"><a href="login-student.html">Giriş</a></button>
-                <!-- <div class="user-profile-details flex gap-3">
-                    <a href=""><img class="w-6 " src="./assets/icon/profile.svg" alt=""></a>
-                    <a href=""><img class="w-6 " src="./assets/icon/logout.svg" alt=""></a>
-                </div> -->
+            <div class="login-section">
+                <button id="sign_button"><a href="login-student.html">Giriş</a></button>
+                <div id="user-profile-details" class="user-profile-details flex gap-3 hidden">
+                    <a href="student.html"><img class="w-6" id="profile" src="./assets/icon/profile.svg" alt=""></a>
+                    <a href=""><img class="w-6" id="logout" src="./assets/icon/logout.svg" alt=""></a>
+                </div>
             </div>
         </nav>
     </div>
@@ -198,6 +198,7 @@
         </div>
     </footer>
 
+    <script src="./assets/script/login-register.js"></script>
     <script src="./assets/script/main.js"></script>
     <script src="./assets/script/faq.js"></script>
 </body>

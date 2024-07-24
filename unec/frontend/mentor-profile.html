@@ -11,17 +11,17 @@
 
 <body>
     <div class="upper">
-        <div class="pre-header flex justify-center gap-x-10 mt-3">
+        <div class="pre-header flex justify-center gap-x-10 mt-3 mx-4 xl:mx-0">
             <div class="pre-header-img">
                 <img src="./assets/img/unec-logo.png" alt="unec logo">
             </div>
-            <div class="pre-header-text my-8">
-                <h1 class="text-3xl">Azərbaycan Dövlət İqtisad Universiteti</h1>
-                <h2 class="text-center text-xl">Məzun İnformasiya Sistemi </h2>
+            <div class="pre-header-text my-1.5 lg:my-8">
+                <h1 class="text-lg w-5/6 lg:w-max lg:text-3xl leading-6">Azərbaycan Dövlət İqtisad Universiteti</h1>
+                <h2 class="lg:text-center text-md lg:text-xl pt-2 ">Məzun İnformasiya Sistemi </h2>
             </div>
 
         </div>
-        <header class="flex items-center justify-between px-20">
+        <header class="flex items-center justify-between px-20 hidden xl:flex">
             <div class="header-left flex gap-16">
                 <p>UNEC MİS</p>
                 <div class="header-left-icons mt-1">
@@ -32,43 +32,47 @@
                 <img src="./assets/icon/header-contact.png" alt="">
             </div>
         </header>
-        <nav class="flex px-20 justify-between">
+        <nav class="flex px-6 lg:px-20 justify-between">
             <div class="nav-left flex gap-10">
-                <ul class="flex gap-20" aria-label="Main navigation">
+                <ul class="fflex lg:gap-7 xl:gap-20 hidden lg:flex" aria-label="Main navigation">
                     <li><a href="index.html">Ana səhifə</a></li>
                     <li><a href="group.html">UNEC Qrup</a></li>
                     <li><a href="announcement.html">Elanlar</a></li>
                     <li><a href="events.html">Tədbirlər</a></li>
                     <li><a href="contact.html">Əlaqə</a></li>
-                    <li><a href="mentors.html">Mentorlar</a></li>
+                    <li><a href="mentor.html">Mentorlar</a></li>
                 </ul>
+                <div class="hamburger-menu lg:hidden">
+                    <img class="w-6 h-8" src="./assets/icon/hamburger-menu.svg" alt="">
+                </div>
                 <div class="nav-search">
                     <img src="./assets/icon/search.png" alt="Search">
                 </div>
             </div>
-            <div>
-                <button class="login-button"><a href="login-student.html">Giriş</a></button>
-                <!-- <div class="user-profile-details flex gap-3">
-                    <a href=""><img class="w-6 " src="./assets/icon/profile.svg" alt=""></a>
-                    <a href=""><img class="w-6 " src="./assets/icon/logout.svg" alt=""></a>
-                </div> -->
+            <div class="login-section">
+                <button id="sign_button"><a href="login-student.html">Giriş</a></button>
+                <div id="user-profile-details" class="user-profile-details flex gap-3 hidden">
+                    <a href="student.html"><img class="w-6" id="profile" src="./assets/icon/profile.svg" alt=""></a>
+                    <a href=""><img class="w-6" id="logout" src="./assets/icon/logout.svg" alt=""></a>
+                </div>
             </div>
         </nav>
+
     </div>
 
     <main>
-        <div class="mentor-background my-12 mx-48 border-b-2">
-            <h1 class="text-[color:var(--main-color)] text-3xl">Haqqında</h1>
-            <div class="mentor-details mt-5">
-                <div class="mentor-pre-info">
+        <div class="mentor-background my-12 mx-7 lg:mx-48 border-b-2">
+            <h1 class="text-[color:var(--main-color)] text-3xl text-center md:text-left ">Haqqında</h1>
+            <div class="mentor-details mt-5 flex flex-col ">
+                <div class="mentor-pre-info text-center md:text-left">
                     <div>
                         <p><span class="italic font-bold">Ixtisas:</span> Back-end developer</p>
                     </div>
                     <div>
-                        <p class="w-7/12 pt-5"><span class="italic font-bold">Haqqinda:</span> Azərbaycan Dövlət İqtisad universiteninin İnformasiya Texnologiyaları ixtisasını 2023-cü ildə bitirmişəm. Hal-hazırda Rabitə bankda işləyirəm.</p>
+                        <p class="w-9/12 pt-5 mx-auto md:mx-0"><span class="italic font-bold">Haqqinda:</span> Azərbaycan Dövlət İqtisad universiteninin İnformasiya Texnologiyaları ixtisasını 2023-cü ildə bitirmişəm. Hal-hazırda Rabitə bankda işləyirəm.</p>
                     </div>
                 </div>
-                <div class="mentor-info flex mt-10 justify-between">
+                <div class="mentor-info flex flex-col-reverse md:flex-row mt-10 justify-between text-center md:text-left">
                     <div class="mentor-info-left mt-5 ">
                         <div>
                             <h4 class="italic font-bold">Təhsili:</h4>
@@ -97,11 +101,11 @@
                         </div>
                     </div>
                     <div class="mentor-info-right">
-                        <img class="h-96 w-72" src="./assets/img/mentor.png" alt="">
+                        <img class="h-96 w-72 mx-auto md:mx-0" src="./assets/img/mentor.png" alt="">
                     </div>
                 </div>
             </div>
-            <div class="mentor-social grid grid-cols-2 my-16 gap-10 mx-32">
+            <div class="mentor-social grid grid-cols-1 md:grid-cols-2 my-16 gap-10 mx-7 md:mx-32">
                 <div class="flex">
                     <img class="h-10" src="./assets/img/linkedin.png" alt="">
                     <p class="leading-10 px-3">Wade Warren</p>
@@ -123,7 +127,7 @@
     </main>
 
     <footer>
-        <div class="footer-top flex  justify-center  gap-20 mt-20 mb-8">
+        <div class="footer-top flex flex-wrap justify-center  gap-20 mt-20 mb-8">
             <div class="footer-menu">
                 <p>Universitet</p>
                 <ul>

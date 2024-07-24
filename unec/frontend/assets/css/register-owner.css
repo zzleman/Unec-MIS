@@ -30,3 +30,17 @@
     height: 45px;
     color: white;
 }
+
+@media screen and (max-width:767px) {
+    .info-inputs input {
+        width: 100%;
+        margin: 0 auto;
+    }
+    #login_btn,
+    #register_btn {
+        width: 100%;
+    }
+    .acceptance {
+        margin-left: 0;
+    }
+}

@@ -14,17 +14,17 @@
 
 <body>
     <div class="upper">
-        <div class="pre-header flex justify-center gap-x-10 mt-3 mx-4 lg:mx-0">
+        <div class="pre-header flex justify-center gap-x-10 mt-3 mx-4 xl:mx-0">
             <div class="pre-header-img">
                 <img src="./assets/img/unec-logo.png" alt="unec logo">
             </div>
             <div class="pre-header-text my-1.5 lg:my-8">
-                <h1 class="text-lg w-2/3 lg:w-max lg:text-3xl leading-6">Azərbaycan Dövlət İqtisad Universiteti</h1>
+                <h1 class="text-lg w-5/6 lg:w-max lg:text-3xl leading-6">Azərbaycan Dövlət İqtisad Universiteti</h1>
                 <h2 class="lg:text-center text-md lg:text-xl pt-2 ">Məzun İnformasiya Sistemi </h2>
             </div>
 
         </div>
-        <header class="flex items-center justify-between px-20 hidden lg:flex">
+        <header class="flex items-center justify-between px-20 hidden xl:flex">
             <div class="header-left flex gap-16">
                 <p>UNEC MİS</p>
                 <div class="header-left-icons mt-1">
@@ -37,13 +37,13 @@
         </header>
         <nav class="flex px-6 lg:px-20 justify-between">
             <div class="nav-left flex gap-10">
-                <ul class="flex gap-20 hidden lg:flex" aria-label="Main navigation">
+                <ul class="fflex lg:gap-7 xl:gap-20 hidden lg:flex" aria-label="Main navigation">
                     <li><a href="index.html">Ana səhifə</a></li>
                     <li><a href="group.html">UNEC Qrup</a></li>
                     <li><a href="announcement.html">Elanlar</a></li>
                     <li><a href="events.html">Tədbirlər</a></li>
                     <li><a href="contact.html">Əlaqə</a></li>
-                    <li><a href="mentors.html">Mentorlar</a></li>
+                    <li><a href="mentor.html">Mentorlar</a></li>
                 </ul>
                 <div class="hamburger-menu lg:hidden">
                     <img class="w-6 h-8" src="./assets/icon/hamburger-menu.svg" alt="">
@@ -52,32 +52,30 @@
                     <img src="./assets/icon/search.png" alt="Search">
                 </div>
             </div>
-            <div>
-                <button class="login-button"><a href="login-student.html">Giriş</a></button>
-                <!-- <div class="user-profile-details flex gap-3">
-                    <a href=""><img class="w-6 " src="./assets/icon/profile.svg" alt=""></a>
-                    <a href=""><img class="w-6 " src="./assets/icon/logout.svg" alt=""></a>
-                </div> -->
+            <div class="login-section">
+                <button id="sign_button"><a href="login-student.html">Giriş</a></button>
+                <div id="user-profile-details" class="user-profile-details flex gap-3 hidden">
+                    <a href="student-profile.html"><img class="w-6" id="profile" src="./assets/icon/profile.svg" alt=""></a>
+                    <a href=""><img class="w-6" id="logout" src="./assets/icon/logout.svg" alt=""></a>
+                </div>
             </div>
         </nav>
+
     </div>
-
     <main>
-
-
-        <div id="default-carousel" class="unec-slider relative w-11/12 h-screen mx-auto mt-8 object-cover" data-carousel="slide">
+        <div id="default-carousel" class="unec-slider relative w-11/12  mx-auto mt-8 object-cover" data-carousel="slide">
             <!-- Carousel wrapper -->
-            <div class="relative h-64 overflow-hidden rounded-lg md:h-3/5 lg:h-4/5">
+            <div class="relative h-64 overflow-hidden rounded-lg md:h-3/5 lg:h-4/5 crsl-wrapper">
                 <!-- Item 1 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="./assets/img/home-slider-1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Slide 1">
+                <div class="slider-img hidden duration-700 ease-in-out" data-carousel-item>
+                    <img id="slider_img_1" src="./assets/img/home-slider-1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Slide 1">
                 </div>
                 <!-- Item 2 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <div class="slider-img hidden duration-700 ease-in-out" data-carousel-item>
                     <img src="./assets/img/home-slider-2.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Slide 2">
                 </div>
                 <!-- Item 3 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <div class="slider-img hidden duration-700 ease-in-out" data-carousel-item>
                     <img src="./assets/img/home-slider-3.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Slide 3">
                 </div>
             </div>
@@ -88,15 +86,13 @@
                 <button type="button" class="indicator w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
             </div>
         </div>
-
-
         <div class="student-master-area">
             <h1 class="graduate text-center pb-10">“UNEC Məzunlar ofisi səhifəsinə xoş gəldiniz”</h1>
             <div class="student-master-card flex flex-col lg:flex-row">
                 <div class="general-card">
                     <img src="./assets/img/sign-graduates.png" alt="">
                     <div class="student-card-show text-white my-36 mx-5">
-                        <h1 class="text-3xl lg:text-5xl w-3/4">MƏZUN TƏLƏBƏYƏM</h1>
+                        <h1 class="text-3xl w-3/4">MƏZUN TƏLƏBƏYƏM</h1>
                         <p class="w-7/12 text-xl lg:text-2xl py-2 lg:py-6">Qeydiyyatdan keçərək iş elanlarına müraciət edə bilərsiniz.</p>
                         <button class="bg-transparent border border-white h-10 w-28 text-md lg:h-12 lg:w-36 lg:text-lg rounded-lg">
                             <a href="register-student.html">Qeydiyyat</a>
@@ -108,7 +104,7 @@
                 <div class="general-card">
                     <img src="./assets/img/sign-ceo.png" alt="">
                     <div class="master-card-show text-white my-36 mx-5">
-                        <h1 class="text-3xl lg:text-5xl w-3/4">SAHİBKARAM</h1>
+                        <h1 class="text-3xl  w-3/4">SAHİBKARAM</h1>
                         <p class="w-7/12 text-xl lg:text-2xl py-2 lg:py-6">Firmanızı qeyd edərək iş elanları yarada bilərsiniz.</p>
                         <button class="bg-transparent border border-white h-10 w-28 text-md lg:h-12 lg:w-36 lg:text-lg rounded-lg">
                             <a href="register-owner.html">Qeydiyyat</a>
@@ -118,8 +114,6 @@
                 </div>
             </div>
         </div>
-
-
         <div class="news-area mt-5 lg:mt-20 px-2">
             <h1 class="text-center py-10 text-[color:var(--main-color)] text-3xl">Xəbərlər</h1>
             <div class="blue-dots hidden lg:block">
@@ -128,9 +122,21 @@
                 <img id="blue-dot-3" src="./assets/pattern/blue-dot-lg.png" alt="">
                 <img id="blue-dot-4" src="./assets/pattern/blue-dot-sm 3.png" alt="">
             </div>
-            <div class="news-container flex flex-col lg:flex-row justify-center gap-7 lg:gap-20">
+            <div class="news-container flex flex-col lg:flex-row lg:flex-wrap  justify-center gap-7 lg:gap-20">
                 <div class="news-card bg-white pb-5">
-                    <img src="./assets/img/news-1.png" class="card-img-top rounded-0" alt="news one">
+                    <img id="news-image" src="./assets/img/news-1.png" class="card-img-top rounded-0" alt="news one">
+                    <span class="news-date text-center">15.03.2024</span>
+                    <div class="card-body mt-3 py-5">
+                        <h5 class="card-title w-11/12 mx-auto text-center">UNEC Prezident İlham Əliyevin tapşırığına uyğun olaraq, yeni təşəbbüsə start verdi</h5>
+                        <p class="card-text w-11/12 mx-auto text-center pt-4">Yerli televiziyalara müsahibəsi zamanı Prezident İlham Əliyev ölkənin gələcək inkişafı ilə bağlı milli ideyaların yaranması məqsədilə siyasətçilər, politoloqlar, elm adamları və...</p>
+                        <a href="#" class="news-btn mr-11 my-3 font-semibold">
+                        Davamını oxu
+                        <img src="./assets/icon/arrow-right.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="news-card bg-white pb-5">
+                    <img id="news-image" src="./assets/img/news-1.png" class="card-img-top rounded-0" alt="news one">
                     <span class="news-date text-center">15.03.2024</span>
                     <div class="card-body mt-3">
                         <h5 class="card-title w-11/12 mx-auto text-center">UNEC Prezident İlham Əliyevin tapşırığına uyğun olaraq, yeni təşəbbüsə start verdi</h5>
@@ -142,19 +148,7 @@
                     </div>
                 </div>
                 <div class="news-card bg-white pb-5">
-                    <img src="./assets/img/news-1.png" class="card-img-top rounded-0" alt="news one">
-                    <span class="news-date text-center">15.03.2024</span>
-                    <div class="card-body mt-3">
-                        <h5 class="card-title w-11/12 mx-auto text-center">UNEC Prezident İlham Əliyevin tapşırığına uyğun olaraq, yeni təşəbbüsə start verdi</h5>
-                        <p class="card-text w-11/12 mx-auto text-center pt-4">Yerli televiziyalara müsahibəsi zamanı Prezident İlham Əliyev ölkənin gələcək inkişafı ilə bağlı milli ideyaların yaranması məqsədilə siyasətçilər, politoloqlar, elm adamları və...</p>
-                        <a href="#" class="news-btn mr-11 my-3 font-semibold">
-                        Davamını oxu
-                        <img src="./assets/icon/arrow-right.svg" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="news-card bg-white pb-5">
-                    <img src="./assets/img/news-1.png" class="card-img-top rounded-0" alt="news one">
+                    <img id="news-image" src="./assets/img/news-1.png" class="card-img-top rounded-0" alt="news one">
                     <span class="news-date text-center">15.03.2024</span>
                     <div class="card-body mt-3">
                         <h5 class="card-title w-11/12 mx-auto text-center">UNEC Prezident İlham Əliyevin tapşırığına uyğun olaraq, yeni təşəbbüsə start verdi</h5>
@@ -167,7 +161,6 @@
                 </div>
             </div>
         </div>
-
         <div class="team-area mt-24 mx-auto">
             <h1 class="text-center text-3xl text-[color:var(--main-color)] mb-8">Komandamız</h1>
             <div class="team-container">
@@ -344,7 +337,6 @@
             </div>
             </section>
         </div>
-
         <div class="question-area mx-auto text-center flex flex-col p-10 gap-6 mt-10 lg:mt-3">
             <div class="question-top">
                 <img class=" mx-auto" src="./assets/img/question-avatar.png" alt="">
@@ -357,8 +349,6 @@
                 <button class="bg-[color:var(--main-color)] text-white"><a href="faq.html">Buraya toxun</a></button>
             </div>
         </div>
-
-
     </main>
 
     <footer>
@@ -407,6 +397,7 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script src="./assets/script/main.js"></script>
+    <script src="./assets/script/login-register.js"></script>
 </body>
 
 </html>

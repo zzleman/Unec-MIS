@@ -98,6 +98,14 @@ nav ul li a.active::after {
 
 /* Nav Ends */
 
+.events-img {
+    width: 100%;
+}
+
+.events-card {
+    width: 50%;
+}
+
 
 /* Footer Starts */
 
@@ -126,3 +134,13 @@ nav ul li a.active::after {
 
 
 /* Footer Ends */
+
+@media screen and (max-width:767px) {
+    .events-img {
+        width: 340px;
+        margin: 0 auto;
+    }
+    .events-card {
+        width: 100%;
+    }
+}

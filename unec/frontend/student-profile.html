@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/output.css">
+    <link rel="stylesheet" href="./assets/css/mentor.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="upper">
+        <div class="pre-header flex justify-center gap-x-10 mt-3 mx-4 xl:mx-0">
+            <div class="pre-header-img">
+                <img src="./assets/img/unec-logo.png" alt="unec logo">
+            </div>
+            <div class="pre-header-text my-1.5 lg:my-8">
+                <h1 class="text-lg w-5/6 lg:w-max lg:text-3xl leading-6">Azərbaycan Dövlət İqtisad Universiteti</h1>
+                <h2 class="lg:text-center text-md lg:text-xl pt-2 ">Məzun İnformasiya Sistemi </h2>
+            </div>
+
+        </div>
+        <header class="flex items-center justify-between px-20 hidden xl:flex">
+            <div class="header-left flex gap-16">
+                <p>UNEC MİS</p>
+                <div class="header-left-icons mt-1">
+                    <img src="./assets/icon/header-social.png" alt="">
+                </div>
+            </div>
+            <div class="header-right">
+                <img src="./assets/icon/header-contact.png" alt="">
+            </div>
+        </header>
+        <nav class="flex px-6 lg:px-20 justify-between">
+            <div class="nav-left flex gap-10">
+                <ul class="fflex lg:gap-7 xl:gap-20 hidden lg:flex" aria-label="Main navigation">
+                    <li><a href="index.html">Ana səhifə</a></li>
+                    <li><a href="group.html">UNEC Qrup</a></li>
+                    <li><a href="announcement.html">Elanlar</a></li>
+                    <li><a href="events.html">Tədbirlər</a></li>
+                    <li><a href="contact.html">Əlaqə</a></li>
+                    <li><a href="mentor.html">Mentorlar</a></li>
+                </ul>
+                <div class="hamburger-menu lg:hidden">
+                    <img class="w-6 h-8" src="./assets/icon/hamburger-menu.svg" alt="">
+                </div>
+                <div class="nav-search">
+                    <img src="./assets/icon/search.png" alt="Search">
+                </div>
+            </div>
+            <div class="login-section">
+                <button id="sign_button"><a href="login-student.html">Giriş</a></button>
+                <div id="user-profile-details" class="user-profile-details flex gap-3 hidden">
+                    <a href="student.html"><img class="w-6" id="profile" src="./assets/icon/profile.svg" alt=""></a>
+                    <a href=""><img class="w-6" id="logout" src="./assets/icon/logout.svg" alt=""></a>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+    <main>
+        <div class="student-container flex flex-col lg:flex-row justify-center gap-5 lg:justify-between mx-20 my-5 lg:my-20 xl:mx-52">
+            <div class="student-left text-center flex flex-col md:flex-row lg:flex-col gap-6 md:gap-20 my-10">
+                <div class="flex flex-col gap-10">
+                    <h3 class="text-2xl">Mentor</h3>
+                    <img class="w-40 mx-auto" src="./assets/img/student-pp.png" alt="">
+                    <p class="text-2xl">Əliyev Ceyhun</p>
+                    <div class="change-pswd flex gap-3 mx-auto w-44 lg:mx-12 border-4 p-2 border-dashed text-nowrap">
+                        <img class="w-5 h-6" src="./assets/img/lock-acc.png" alt="">
+                        <a href="" class="leading-7 ">Şifrəni dəyişdir</a>
+                    </div>
+                </div>
+
+                <div class="student-info flex flex-col gap-4 justify-start md:justify-center lg:justify-start">
+                    <div class="info-item flex gap-3">
+                        <img class="w-6 h-6" src="./assets/img/linkedin-sm.png" alt="">
+                        <p>Əliyev Ceyhun</p>
+                    </div>
+                    <div class="info-item flex gap-3">
+                        <img class="w-6 h-6" src="./assets/img/mail-sm.png" alt="">
+                        <p>wade.warren1@example.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="student-right flex flex-col gap-10">
+                <div class="student-detail flex justify-center lg:justify-between gap-10 lg:gap-40">
+                    <h3 class="text-4xl">Haqqındda</h3>
+                    <div class="change-smth flex gap-2 border-4 p-2 border-dashed text-nowrap hidden lg:flex">
+                        <img class="w-5 h-6" src="./assets/img/lock-acc.png" alt="">
+                        <a href="" class="leading-6 ">Şifrəni dəyişdir</a>
+                    </div>
+                </div>
+                <div class="student-area items-center flex flex-col md:flex-row md:justify-center  gap-3 md:gap-10">
+                    <div class="flex flex-col gap-3">
+                        <div class="student-input flex flex-col gap-2">
+                            <label for="">Ad</label>
+                            <input class="w-72 h-12 rounded-xl p-3" type="text" placeholder="Wade">
+                        </div>
+                        <div class="student-input flex flex-col gap-2">
+                            <label for="">Soyad</label>
+                            <input class="w-72 h-12 rounded-xl p-3" type="text" placeholder="Warren">
+                        </div>
+                        <div class="student-input flex flex-col gap-2">
+                            <label for="">Doğum tarixi</label>
+                            <input class="w-72 h-12 rounded-xl p-3" type="text" placeholder="14.06.2001">
+                        </div>
+                        <div class="student-input flex flex-col gap-2">
+                            <label for="">Email</label>
+                            <input class="w-72 h-12 rounded-xl p-3" type="text" placeholder="example@gmail.com">
+                        </div>
+                        <div class="student-input flex flex-col gap-2">
+                            <label for="">Telefon nömrəsi</label>
+                            <input class="w-72 h-12 rounded-xl p-3" type="text" placeholder="+994551234567">
+                        </div>
+                        <div class="student-input flex flex-col gap-2">
+                            <label for="">Ünvan</label>
+                            <input class="w-72 h-12 rounded-xl p-3" type="text" placeholder="Murtuza Muxtarov 3">
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <div class="student-input flex flex-col gap-2">
+                            <label for="">Qəbul olduğu il</label>
+                            <input class="w-72 h-12 rounded-xl p-3" type="text" placeholder="Wade">
+                        </div>
+                        <div class="student-input flex flex-col gap-2">
+                            <label for="">Məzun olduğu il</label>
+                            <input class="w-72 h-12 rounded-xl p-3" type="text" placeholder="Warren">
+                        </div>
+                        <div class="student-input flex flex-col gap-2">
+                            <label for="">Ixtisas</label>
+                            <select class="w-72 h-12 rounded-xl p-3" t name="" id="">
+                                <option value="" hidden>Select an option</option>
+                                <option value="">IT</option>
+                                <option value="">Business Adminstiration</option>
+                                <option value="">Finance</option>
+                                <option value="">Computer Science</option>
+                            </select>
+                        </div>
+                        <div class="student-input flex flex-col gap-2">
+                            <label for="">Dil bilikləri</label>
+                            <input class="w-72 h-12 rounded-xl p-3" type="text" placeholder="B2">
+                        </div>
+                        <div class="student-input flex flex-col gap-2">
+                            <label for="">Iş təcrübəniz</label>
+                            <input class="w-72 h-12 rounded-xl p-3" type="text" placeholder="6ay">
+                        </div>
+                        <div class="student-input flex flex-col gap-2">
+                            <label for="">Cari iş yeriniz</label>
+                            <input class="w-72 h-12 rounded-xl p-3" type="text" placeholder="Yoxdur">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="w-10/12 mx-auto">
+        <div class="success-container mx-10 lg:mx-40 my-20 flex flex-col gap-5">
+            <div class="success-heading flex justify-between mb-20">
+                <h3 class="text-lg md:text-3xl lg:text-4xl text-nowrap">Əldə etdiyim uğurlar</h3>
+                <a href="" class="flex gap-2">
+                    <img class="w-7 h-7" src="./assets/img/Plus.png" alt="">
+                    <span class="leading-7 text-xl md:text-2xl">Yeni</span>
+                </a>
+            </div>
+            <div class="success-variants text-center flex flex-col gap-7">
+                <div class="flex gap-5 justify-center">
+                    <span class="bg-amber-500 w-40 h-10 text-center py-1.5 rounded-md text-white">Diplom</span>
+                    <span class="bg-blue-700 w-40 h-10 text-center py-1.5 rounded-md text-white">CV</span>
+                    <span class="bg-red-600 w-40 h-10 text-center py-1.5 rounded-md text-white">Sertifikat</span>
+                </div>
+                <p class="text-lg text-gray-500">Buraya sertifikatlarınızı, işlədiyiniz yerləri, könüllülük proqramlarını əlavə edə bilərsiniz.</p>
+
+            </div>
+            <div class="success-documents grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center my-10 gap-10 text-center">
+                <div class="flex flex-col gap-2">
+                    <img class="h-72 lg:h-40" src="./assets/img/document.png" alt="">
+                    <h4>CV</h4>
+                    <p>2 May 2024</p>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <img class="h-72 lg:h-40" src="./assets/img/document.png" alt="">
+                    <h4>Diplom</h4>
+                    <p> 31 Dekabr 2022</p>
+                    <p>UNEC</p>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <img class="h-72 lg:h-40" src="./assets/img/document.png" alt="">
+                    <h4>Transkript</h4>
+                    <p>26 Aprel</p>
+                    <p>UNEC</p>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <img class="h-72 lg:h-40" src="./assets/img/document.png" alt="">
+                    <h4>Sertifikat</h4>
+                    <p>26 Aprel</p>
+                    <p>Back-end developer</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div class="footer-top flex flex-wrap justify-center  gap-20 mt-20 mb-8">
+            <div class="footer-menu">
+                <p>Universitet</p>
+                <ul>
+                    <li><a href="">Haqqımızda</a></li>
+                    <li><a href="">Karyera Mərkəzi</a></li>
+                    <li><a href="">Xəbərlər</a></li>
+                    <li><a href="">Komandamız</a></li>
+                    <li><a href="">Əlaqə</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu">
+                <p>Resurslar</p>
+                <ul>
+                    <li><a href="">Haqqımızda</a></li>
+                    <li><a href="">Karyera Mərkəzi</a></li>
+                    <li><a href="">Xəbərlər</a></li>
+                    <li><a href="">Komandamız</a></li>
+                    <li><a href="">Əlaqə</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu social-menu">
+                <p>Sosial şəbəkələr</p>
+                <ul>
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">Linkedin</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu">
+                <p>Qanunlar</p>
+                <ul>
+                    <li><a href="">Qaydalar</a></li>
+                    <li><a href="">Təhlükəsizlik</a></li>
+                    <li><a href="">Dəstək</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom text-center pt-5 pb-10">
+            <p> <span>&copy</span> 2024 UNEC. Bütün hüquqlar qorunur.</p>
+        </div>
+    </footer>
+    <script src="./assets/script/login-register.js"></script>
+    <script src="./assets/script/main.js"></script>
+</body>
+
+</html>

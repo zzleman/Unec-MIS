@@ -101,6 +101,10 @@ nav ul li a.active::after {
 
 /* Contact Container Starts */
 
+main {
+    margin-bottom: 50px;
+}
+
 .contact-container {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/unec/frontend/assets/img/contact-bg.png);
     height: 630px;
@@ -124,3 +128,27 @@ nav ul li a.active::after {
 
 
 /* Footer Ends */
+
+@media screen and (max-width:767px) {
+    main {
+        height: 1030px;
+    }
+    .contact-right img {
+        width: 90%;
+        height: 350px;
+        margin: 0 auto;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    main {
+        height: 1150px;
+    }
+    .contact-right img {
+        width: 90%;
+        height: 450px;
+        margin: 0 auto;
+        object-fit: cover;
+    }
+}
