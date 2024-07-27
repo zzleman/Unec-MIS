@@ -54,12 +54,14 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-const nav_lupa = document.getElementById("nav-lupa");
-const nav_input = document.getElementById("nav-input");
+const hamMenu = document.getElementById('ham_menu');
+const closeMenu = document.getElementById('close-menu');
+const phoneMenu = document.getElementById('phone-menu');
 
-nav_lupa.addEventListener(onmouseenter, () => {
-    nav_input.style.display = "block";
-})
-nav_lupa.addEventListener(onmouseout, () => {
-    nav_input.style.display = "none";
-})
+hamMenu.addEventListener('click', function() {
+    phoneMenu.classList.add('open');
+});
+
+closeMenu.addEventListener('click', function() {
+    phoneMenu.classList.remove('open');
+});

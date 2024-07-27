@@ -48,10 +48,12 @@
                     <li><a href="mentor.html">Mentorlar</a></li>
                 </ul>
                 <div class="hamburger-menu lg:hidden">
-                    <img class="w-6 h-8" src="./assets/icon/hamburger-menu.svg" alt="">
+                    <img id="ham_menu" class="w-6 h-8" src="./assets/icon/hamburger-menu.svg" alt="">
                 </div>
-                <div class="nav-search">
-                    <img src="./assets/icon/search.png" alt="Search">
+
+                <div class="nav-search flex relative">
+                    <img class="absolute top-0.5 left-5 " src="./assets/icon/search.png" alt="Search">
+                    <input class="bg-transparent border-white rounded-lg px-11 hidden md:block" type="text" placeholder="Search">
                 </div>
             </div>
             <div class="login-section">
@@ -62,10 +64,24 @@
                 </div>
             </div>
         </nav>
+        <div id="phone-menu" class="fixed top-0 left-0 w-full h-full lg:hidden hidden">
+            <div class="flex justify-between items-center p-4 border-b">
+                <div>
+                    <a href="index.html"> <img class="h-16 bg-white rounded-xl p-2" src="./assets/img/unec-logo.png" alt="unec logo"></a>
+                </div>
+                <button id="close-menu" class="text-xl text-white">x</button>
+            </div>
+            <ul class="py-7 flex flex-col gap-8 text-center text-white text-2xl">
+                <li><a href="index.html">Ana səhifə</a></li>
+                <li><a href="group.html">UNEC Qrup</a></li>
+                <li><a href="announcement.html">Elanlar</a></li>
+                <li><a href="events.html">Tədbirlər</a></li>
+                <li><a href="contact.html">Əlaqə</a></li>
+                <li><a href="mentor.html">Mentorlar</a></li>
+            </ul>
+        </div>
 
     </div>
-
-
     <main>
         <div class="faq-dropdown w-10/12 mx-auto lg:mx-0 lg:w-full px-0 lg:px-20 ">
             <h1 class="py-10 text-xl lg:text-3xl text-[color:var(--main-color)] font-semibold">Ən çox verilən suallar</h1>
@@ -160,45 +176,43 @@
             </div>
         </div>
     </main>
-
-
     <footer>
         <div class="footer-top flex flex-wrap justify-center  gap-20 mt-20 mb-8">
             <div class="footer-menu">
                 <p>Universitet</p>
                 <ul>
-                    <li><a href="">Haqqımızda</a></li>
-                    <li><a href="">Karyera Mərkəzi</a></li>
-                    <li><a href="">Xəbərlər</a></li>
-                    <li><a href="">Komandamız</a></li>
-                    <li><a href="">Əlaqə</a></li>
+                    <li><a href="./group.html">Haqqımızda</a></li>
+                    <li><a href="/events.html">Karyera Mərkəzi</a></li>
+                    <li><a href="./announcement.html">Xəbərlər</a></li>
+                    <li><a href="./mentor.html">Komandamız</a></li>
+                    <li><a href="./contact.html">Əlaqə</a></li>
                 </ul>
             </div>
             <div class="footer-menu">
                 <p>Resurslar</p>
                 <ul>
-                    <li><a href="">Haqqımızda</a></li>
-                    <li><a href="">Karyera Mərkəzi</a></li>
-                    <li><a href="">Xəbərlər</a></li>
-                    <li><a href="">Komandamız</a></li>
-                    <li><a href="">Əlaqə</a></li>
+                    <li><a href="./group.html">Haqqımızda</a></li>
+                    <li><a href="./events.html">Karyera Mərkəzi</a></li>
+                    <li><a href="./announcement.html">Xəbərlər</a></li>
+                    <li><a href="./mentor.html">Komandamız</a></li>
+                    <li><a href="./contact.html">Əlaqə</a></li>
                 </ul>
             </div>
             <div class="footer-menu social-menu">
                 <p>Sosial şəbəkələr</p>
                 <ul>
-                    <li><a href="">Twitter</a></li>
-                    <li><a href="">Linkedin</a></li>
-                    <li><a href="">Facebook</a></li>
-                    <li><a href="">Instagram</a></li>
+                    <li><a href="https://x.com/uneceduaz?lang=en" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.linkedin.com/school/azerbaijan-state-university-of-economics/" target="_blank">Linkedin</a></li>
+                    <li><a href="https://www.facebook.com/unecedu/" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/uneceduaz/?hl=en" target="_blank">Instagram</a></li>
                 </ul>
             </div>
             <div class="footer-menu">
                 <p>Qanunlar</p>
                 <ul>
-                    <li><a href="">Qaydalar</a></li>
-                    <li><a href="">Təhlükəsizlik</a></li>
-                    <li><a href="">Dəstək</a></li>
+                    <li><a href="#">Qaydalar</a></li>
+                    <li><a href="#">Təhlükəsizlik</a></li>
+                    <li><a href="#">Dəstək</a></li>
                 </ul>
             </div>
         </div>

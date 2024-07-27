@@ -48,10 +48,12 @@
                     <li><a href="mentor.html">Mentorlar</a></li>
                 </ul>
                 <div class="hamburger-menu lg:hidden">
-                    <img class="w-6 h-8" src="./assets/icon/hamburger-menu.svg" alt="">
+                    <img id="ham_menu" class="w-6 h-8" src="./assets/icon/hamburger-menu.svg" alt="">
                 </div>
-                <div class="nav-search">
-                    <img src="./assets/icon/search.png" alt="Search">
+
+                <div class="nav-search flex relative">
+                    <img class="absolute top-0.5 left-5 " src="./assets/icon/search.png" alt="Search">
+                    <input class="bg-transparent border-white rounded-lg px-11 hidden md:block" type="text" placeholder="Search">
                 </div>
             </div>
             <div class="login-section">
@@ -62,9 +64,24 @@
                 </div>
             </div>
         </nav>
+        <div id="phone-menu" class="fixed top-0 left-0 w-full h-full lg:hidden hidden">
+            <div class="flex justify-between items-center p-4 border-b">
+                <div>
+                    <a href="index.html"> <img class="h-16 bg-white rounded-xl p-2" src="./assets/img/unec-logo.png" alt="unec logo"></a>
+                </div>
+                <button id="close-menu" class="text-xl text-white">x</button>
+            </div>
+            <ul class="py-7 flex flex-col gap-8 text-center text-white text-2xl">
+                <li><a href="index.html">Ana səhifə</a></li>
+                <li><a href="group.html">UNEC Qrup</a></li>
+                <li><a href="announcement.html">Elanlar</a></li>
+                <li><a href="events.html">Tədbirlər</a></li>
+                <li><a href="contact.html">Əlaqə</a></li>
+                <li><a href="mentor.html">Mentorlar</a></li>
+            </ul>
+        </div>
 
     </div>
-
     <main>
         <div class="login-container text-center px-10 pt-20 flex flex-col items-center">
             <div class="choose-path flex gap-5 py-3 px-5">
@@ -119,8 +136,6 @@
             </form>
         </div>
     </main>
-
-
     <footer>
         <div class="footer-bottom text-center pt-5 pb-10 ">
             <p> <span>&copy</span> 2024 UNEC. Bütün hüquqlar qorunur.</p>

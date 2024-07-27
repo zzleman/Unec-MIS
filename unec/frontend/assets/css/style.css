@@ -65,9 +65,10 @@ nav {
     padding: 15px;
 }
 
-.nav-search img {
-    width: 23px;
-    margin-top: 4px;
+.nav-search input {
+    width: 180px;
+    height: 35px;
+    border: 1px solid white;
 }
 
 .nav-left {
@@ -94,6 +95,32 @@ nav ul li a.active::after {
     position: absolute;
     bottom: -9px;
     left: 0;
+}
+
+#phone-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #114C8C;
+    z-index: 1000;
+    overflow-y: auto;
+    transition: transform 0.3s ease;
+    transform: translateX(-100%);
+}
+
+#phone-menu.open {
+    display: block;
+    transform: translateX(0);
+}
+
+#close-menu {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
 }
 
 
