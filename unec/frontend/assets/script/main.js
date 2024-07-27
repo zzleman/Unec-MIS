@@ -53,3 +53,13 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+const nav_lupa = document.getElementById("nav-lupa");
+const nav_input = document.getElementById("nav-input");
+
+nav_lupa.addEventListener(onmouseenter, () => {
+    nav_input.style.display = "block";
+})
+nav_lupa.addEventListener(onmouseout, () => {
+    nav_input.style.display = "none";
+})

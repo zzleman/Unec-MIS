@@ -123,6 +123,7 @@ nav ul li a.active::after {
 
 .accordion .accordion-item .accordion-item-header .accordion-item-header-title {
     font-weight: 600;
+    width: 80%;
 }
 
 .accordion .accordion-item .accordion-item-header .accordion-item-header-icon {

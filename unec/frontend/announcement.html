@@ -12,12 +12,12 @@
 
 <body>
     <div class="upper">
-        <div class="pre-header flex justify-center gap-x-10 mt-3 mx-4 lg:mx-0">
+        <div class="pre-header flex justify-center gap-x-10 mt-3 mx-4 xl:mx-0">
             <div class="pre-header-img">
-                <img src="./assets/img/unec-logo.png" alt="unec logo">
+                <a href="index.html"> <img src="./assets/img/unec-logo.png" alt="unec logo"></a>
             </div>
             <div class="pre-header-text my-1.5 lg:my-8">
-                <h1 class="text-lg w-2/3 lg:w-max lg:text-3xl leading-6">Azərbaycan Dövlət İqtisad Universiteti</h1>
+                <h1 class="text-lg w-5/6 lg:w-max lg:text-3xl leading-6">Azərbaycan Dövlət İqtisad Universiteti</h1>
                 <h2 class="lg:text-center text-md lg:text-xl pt-2 ">Məzun İnformasiya Sistemi </h2>
             </div>
 
@@ -25,17 +25,21 @@
         <header class="flex items-center justify-between px-20 hidden xl:flex">
             <div class="header-left flex gap-16">
                 <p>UNEC MİS</p>
-                <div class="header-left-icons mt-1">
-                    <img src="./assets/icon/header-social.png" alt="">
+                <div class="header-left-icons mt-1 flex gap-2">
+                    <a href="https://www.facebook.com/unecedu/" target="_blank"><img class="h-6 w-6 object-cover" src="./assets/img/facebook-header.png" alt="facebook"></a>
+                    <a href="https://www.instagram.com/uneceduaz/?hl=en" target="_blank"><img class="h-6 w-6 object-cover" src="./assets/img/ig-header.png" alt="ig"></a>
+                    <a href="https://www.linkedin.com/school/azerbaijan-state-university-of-economics/" target="_blank"><img class="h-6 w-6 object-cover" src="./assets/img/linkedin-header.png" alt="linkedin"></a>
+                    <a href="https://www.youtube.com/channel/UCWlqMLpR7aGLW2IiadrF0Jg" target="_blank"><img class="h-6 w-6 object-cover" src="./assets/img/youtube-header.png" alt="youtube"></a>
+                    <a href="https://x.com/uneceduaz?lang=en" target="_blank"><img class="h-6 w-6 object-cover" src="./assets/img/twitter-header.png" alt="twitter"></a>
                 </div>
             </div>
             <div class="header-right">
                 <img src="./assets/icon/header-contact.png" alt="">
             </div>
         </header>
-        <nav class="flex px-6 lg:px-20 justify-between text-nowrap">
+        <nav class="flex px-6 lg:px-20 justify-between">
             <div class="nav-left flex gap-10">
-                <ul class="flex lg:gap-7 xl:gap-20 hidden lg:flex" aria-label="Main navigation">
+                <ul class="fflex lg:gap-7 xl:gap-20 hidden lg:flex" aria-label="Main navigation">
                     <li><a href="index.html">Ana səhifə</a></li>
                     <li><a href="group.html">UNEC Qrup</a></li>
                     <li><a href="announcement.html">Elanlar</a></li>
@@ -46,20 +50,21 @@
                 <div class="hamburger-menu lg:hidden">
                     <img class="w-6 h-8" src="./assets/icon/hamburger-menu.svg" alt="">
                 </div>
-                <div class="nav-search">
-                    <img src="./assets/icon/search.png" alt="Search">
+                <div class="nav-search flex gap-5 ">
+                    <img id="nav-lupa" class="h-7 w-7" src="./assets/icon/search.png" alt="Search">
+                    <input id="nav-input" class=" w-3/3 h-9 rounded-lg" type="text">
                 </div>
             </div>
             <div class="login-section">
                 <button id="sign_button"><a href="login-student.html">Giriş</a></button>
                 <div id="user-profile-details" class="user-profile-details flex gap-3 hidden">
-                    <a href="student.html"><img class="w-6" id="profile" src="./assets/icon/profile.svg" alt=""></a>
+                    <a href="student-profile.html"><img class="w-6" id="profile" src="./assets/icon/profile.svg" alt=""></a>
                     <a href=""><img class="w-6" id="logout" src="./assets/icon/logout.svg" alt=""></a>
                 </div>
             </div>
         </nav>
-    </div>
 
+    </div>
     <main>
         <div class="main-bg">
             <div class="main-absolute text-center py-40 flex flex-col gap-5">
